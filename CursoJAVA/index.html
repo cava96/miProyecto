@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <title>Primera web</title>
+        <link rel="stylesheet" href="CSS/estilos.css">
+        <script src="js/funciones.js"></script>
+        <meta charset="utf-8">
+        <meta name="description"content="Ejemplo de HTML5">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    </head>
+    <body>
+        <header>
+            <h1 class="otrafuente">Gran curso de Java</h1>
+        </header>
+        <nav>
+            <ul>
+                <li class="botonactivo">Principal</li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li>Fotos</li>                
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <p id="parrafo1">Parrafo</p>
+                <p style="color: yellow">Esto es un parrafo</p>
+                <p>Esto es un parrafo en <strong>negrita</strong></p>
+                <p class="colorrojo">Gran pelicula</p>
+                <img src="imagenes/descarga.jpg" alt="escudo Real Madrid">
+                <audio id="medio" controls loop>
+                    <source src="canciones/melendi.mp3">   
+                </audio>
+                <p onclick="concatenaNombre();">Hacer clic</p>
+                <p id="nombre">Adrian</p>
+                <p id="apellido">Lopez</p>
+                <p id="nombrecompleto"></p>
+                
+            </article>
+        </section>
+        <aside>
+            <video id="medio" width="360" height="200" preload controls 
+                <source src="videos/perros.mp4">
+            </video>
+            <input id="operando1" type="number" value="Operando 1"> Operando 1</input>
+            <br>
+            <input id="operando2" type="number" value="Operando 2"> Operando 2</input>
+            <br>
+            <input onclick="sumar();" type="submit" value="Suma">
+            <br>
+            <input onclick="restar();" type="submit" value="Resta">
+            <br>
+            <input onclick="potencia();" type="submit" value="Potencia">
+            <br>
+            <input onclick="comprobarParidad();" type="submit" value="Comprobar Paridad">
+            <br>
+            <p id="resultado"></p>
+            
+            <p>Listado de coches: <a onclick="muestraCoches();">(mostrar lista)</a></p>
+            <p id="listadocoches"></p>
+            
+            <p>Numero de pesos que superan los 80 kg:<a onclick="contarPeso();">(calcular)</a></p>
+            <p id="cont"></p>
+            
+            <p>Informe de notas<a onclick="saberNotas();">(comprobar)</a></p>
+            <p>Suspensos:</p>
+            <p id="susp"></p>
+            
+            <p>Aptos:</p>
+            <p id="aptos"></p>
+            
+            <p>Bien:</p>
+            <p id="bien"></p>
+            
+            <p>Notables:</p>
+            <p id="not"></p>
+            
+            <p>Sobresalientes:</p>
+            <p id="sob"></p>
+            
+            <p>Matriculas de honor:</p>
+            <p id="math"></p>   
+
+            <p><a onclick="sueldoMedio();">El sueldo medio es:</p>
+            <p id="sldMedio"></p>
+            
+            <p><a onclick="menosCobra();">El que menos cobra es:</p>
+            <p id="trb"></p>
+            
+            <p><a onclick="masTrabaja();">El que mas trabaja:</p>
+            <p id="trabajador"></p>
+            
+        </aside>
+        <footer>
+            Desarrollado por <a href="http://desarrollo4app.com" target="_blank">Desarrollo4App</a>
+        </footer>
+    </body>
+</html>

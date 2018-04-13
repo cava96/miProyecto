@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <title>Contacto</title>
+        <link rel="stylesheet" href="CSS/estilos.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <meta charset="utf-8">
+        <script src="js/funciones.js"></script>
+        <script>
+            $(document).ready(function() {
+            $('#example').DataTable({
+                "language":{
+                    "lengthMenu": "Muestra _MENU_ por pagina",
+                    "zeroRecords": "No encontrado - disculpe",
+                    "info": "Pagina _PAGE_ de _PAGES_",
+                    "infoEmpty": "Sin resultado disponible",
+                    
+                    "oPaginate":{
+                        "sPrevious": "Anterior",
+                        "sNext": "Siguiente"
+                    }
+                },
+                
+            });
+        } );
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Contacto</h1>
+            <p onclick="mensaje();">Hacer clic</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li class="botonactivo">Contacto</li>
+                <li>Fotos</li>
+            </ul>
+        </nav>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.3697349408226!2d-2.1359066847723778!3d40.06716408474914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5d6768f3ee331d%3A0x5c39037c089baca6!2sATPERSON+FORMACION!5e0!3m2!1ses-419!2ses!4v1523442522535" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <table id="example">
+                    <thead>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>SUELDO</th>
+                            <th>HORAS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                            <td>Javier</td>
+                            <td>3500</td>
+                            <td>100</td>
+                            </tr>
+                        <tr>
+                            <td>Fran</td>
+                            <td>2000</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>2500</td>
+                            <td>150</td>
+                        </tr> 
+                    </tbody>
+                    
+                </table>
+                <table id="ejemplo"></table>
+        </section>
+        <aside>
+            <form method="post">
+                <input type="text" name="nombre" placeholder="Escribe tu nombre">
+                <br>
+                <input type="email" name="correo" placeholder="Escribe tu email" required>
+                <br>
+                <input type="number" name="edad" min="0" max="110">
+                <br>
+                <textarea name="mensaje">
+                    Dejanos tu comentario
+                </textarea>
+                <br>
+                <input type="checkbox" value="Acepto" name="acepto" required> He leido y acpeto las condiciones
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </aside>
+        <footer>
+            Derechos reservados &copy 2018
+        </footer>
+    </body>

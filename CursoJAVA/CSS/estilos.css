@@ -1,0 +1,112 @@
+*{
+    font-family: Arial,Verdana;
+}
+
+.otrafuente{
+    font-family: NuevaFuente;
+}
+
+nav ul li{
+    display: inline;
+    border: 1px solid blue;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 20px;
+}
+
+footer a{
+   color: #00f00c;
+   text-decoration: none;
+   cursor: hand;
+}
+
+header,section,aside,footer,nav,article{
+    display: block;
+}
+
+body{
+    text-align: center;  
+}
+
+section{
+    float: left;
+    width: 70%;
+    background-color: #cccccc;
+    background: -webkit-linear-gradient(top, #000000, #006699);
+    background: -moz-linear-gradient(top, #000000, #006699);
+}
+
+aside{
+    float: left;
+    width: 30%;
+    background-color: pink; 
+}
+
+footer{
+    clear: both;
+}
+
+nav ul li:hover{
+    background-color: blue;
+}
+
+#parrafo1{
+    color: green;
+    font-weight: bold;
+    border: 1px solid #000000;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.colorrojo{
+    color: red;
+}
+
+.botonactivo{
+    background-color: yellow;
+}
+.anchura{
+    width: 100%;
+}
+
+h1{
+    text-shadow: 2px 2px 5px green;    
+}
+
+@font-face{
+    font-family: 'NuevaFuente';
+    src:url('../Fuentes/NuevaFuente.ttf');
+}
+
+/******DISEÑO MÓVIL********/
+@media only screen and (max-width: 600px){
+    section{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    nav{
+        display:block;
+    }
+}
+
+/*table,th,td{
+    border: 1px solid #333333;
+}
+
+th,td{
+    padding: 10px;
+}
+
+table{
+    border-collapse:collapse;
+    background-color: pink;
+}*/
+
+
